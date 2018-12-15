@@ -1,0 +1,51 @@
+<!--
+如何使用CSS
+
+CSS 是在 HTML 4 开始使用的,是为了更好的渲染HTML元素而引入的.
+CSS 可以通过以下方式添加到HTML中:
+内联样式- 在HTML元素中使用"style" 属性
+内部样式表 -在HTML文档头部 <head> 区域使用<style> 元素 来包含CSS
+外部引用 - 使用外部 CSS 文件
+最好的方式是通过外部引用CSS文件.
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS实验</title>
+    <style type="text/css">
+        h1 {
+            color: red;
+        }
+        
+        p {
+            color: blue;
+        }
+    </style>
+
+    <!--使用外部样式表-->
+    <link rel="stylesheet" type="text/css" href="/statics/demosource/styles.css">
+</head>
+
+<body style="background-color:yellow;">
+    <!--使用内部样式-->
+    <h1>这是一个标题</h1>
+    <p>这是一个段落。</p>
+    <a href="http://www.w3cschool.cn/" sytle="text-decoration:none;">访问w3cschool.cn!</a>
+
+    <!--内联样式-->
+    <p style="color:blue;margin-left:20px;">This is a paragraph.</p>
+
+    <!--字体-->
+    <h1 style="font-family:verdana;">A heading</h1>
+    <p style="font-family:arial;color:read;font-size:30px;">A paragraph.</p>
+
+    <!--文本对齐-->
+    <h1 style="text-align:center;"> Center-aligned heading</h1>
+    <p>This is a paragraph</p>
+</body>
+
+</html>
