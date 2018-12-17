@@ -1,0 +1,31 @@
+<!--
+    iframe标签规定一个内联框架
+一个内联框架被用来在当前 HTML 文档中嵌入另一个文档。
+通过使用框架，你可以在同一个浏览器窗口中显示不止一个页面。    
+-->
+
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>iframe标签</title>
+</head>
+
+<body>
+    <iframe src="other.html" width="200" height="200"></iframe>
+    <p>一些旧的浏览器不支持iframe</p>
+    <p>如果浏览器不支持iframes则不会显示。</p>
+
+    <br>
+    <p>外部网站能访问不?</p>
+    <iframe src="http://www.w3cschool.cn/" width="200" height="200" frameborder="1">
+    <p>您的浏览器不支持  iframe 标签。</p>
+    </iframe>
+
+    <br>
+    <iframe src="other.html" name="iframe_a"></iframe>
+    <p><a href="http://www.w3cschool.cn" target="iframe_a">W3CSCHOOL</a></p>
+</body>
+
+</html>
